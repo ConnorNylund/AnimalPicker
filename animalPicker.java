@@ -10,7 +10,7 @@ public class animalPicker {
         Scanner scan = new Scanner( System.in );
 
             while (true) {
-            System.out.println("What animal would you like to see: Dog or Cat or Fish or Bird?");// Askes the user to enter one of the animal names.
+            System.out.println("What animal would you like to see: Dog or Cat or Fish or Bird or Frog?");// Askes the user to enter one of the animal names.
             cmd = scan.nextLine();// Takes the user input
 
             switch (cmd.toLowerCase()) {
@@ -40,6 +40,10 @@ public class animalPicker {
                     System.out.println("BIRD ASCII ART HERE");
                     System.out.println("   \\\\\n   (o>\n\\\\_//)\n \\_/_)\n  _|_");
                    return;
+                case "frog":
+                    System.out.println("   o ");
+                    System.out.println(" _`O'_");
+                return;
                 default:
                     System.out.println("Not an option. Please enter 'dog' or 'cat' or 'fish' or 'bird'."); // Loops around until you enter a valid option.
             }
