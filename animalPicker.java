@@ -9,8 +9,8 @@ public class animalPicker {
 
         Scanner scan = new Scanner( System.in );
 
-        while (true) {
-            System.out.println("What animal would you like to see: Dog or Cat?");// Askes the user to enter one of the animal names.
+            while (true) {
+            System.out.println("What animal would you like to see: Dog or Cat or Fish?");// Askes the user to enter one of the animal names.
             cmd = scan.nextLine();// Takes the user input
 
             switch (cmd.toLowerCase()) {
@@ -27,10 +27,20 @@ public class animalPicker {
                                         "| o_o |\r\n"+
                                         " \\_^_/");
                     return; 
+                case "fish":
+                    System.out.println("FISH ASCII ART HERE");// Prints out fish ASCII art.
+                    System.out.println("|\\   \\\\\\\\__     o\r\n" + //
+                                                "| \\_/    o \\    o \r\n" + //
+                                                "> _   (( <_  oo  \r\n" + //
+                                                "| / \\__+___/      \r\n" + //
+                                                "|/     |/\r\n" + //
+                                                "");
+                    return;
                 default:
-                    System.out.println("Not an option. Please enter 'dog' or 'cat'."); // Loops around untill you enter a valid option.
+                    System.out.println("Not an option. Please enter 'dog' or 'cat' or 'fish'."); // Loops around untill you enter a valid option.
             }
         }
     }
 }
+
 
