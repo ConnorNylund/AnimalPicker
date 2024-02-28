@@ -22,6 +22,7 @@ public class animalPicker {
                     return; 
                 
                 default:
+                    System.out.println("Not an option. Please enter 'dog' or 'cat'."); 
         }
     }
 }
